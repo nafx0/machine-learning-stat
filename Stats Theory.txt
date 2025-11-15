@@ -1,0 +1,31 @@
+Mean --> Symetric dataset (i.e. height, temparature)
+Median --> Outlier insensitive == More accurate representation of data (i.e. income)
+Mode --> Most Frequency (i.e. non numerical data)
+
+variance --> Model memorizes from high variance data sets,
+     can't differentiate in low variance data sets, so we need moderate variance
+
+quartile --> divides the data in 4 divisons
+    0-25, 25-50, 50-75, 75-100 (%)
+IQR = Q3 - Q1
+
+Outlier detection rule = any point below (Q1 - 1.5 * IQR) and above (Q3 + 1.5 * IQR)
+
+z score --> standardization and scaling (x-mean) / std
+Modified Z score --> Data Set small and skewed
+
+Distribution should be symetric for the optimal ML model performance
+    If data sets are skewed, then transformed to make the data more symetric
+
+Skewness --> which side the data lean toward
+Long tail --> How extended rare or extreme values are
+
+!!! Not all outlier are bad, fraud detection or medical diagnosis, outlier represent critical cases
+
+why mean and standard deviation fail sometime?
+    -- works well with symetric data, normal and clean data
+    -- works bad if you have outliers
+
+when to use median and iqr?
+    -- If data are skewed or have long tails, outliers or extreme values
+
